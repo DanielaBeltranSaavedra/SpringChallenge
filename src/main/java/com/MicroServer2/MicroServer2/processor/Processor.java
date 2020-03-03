@@ -1,4 +1,4 @@
-package com.MicroServer2.MicroServer2;
+package com.MicroServer2.MicroServer2.processor;
 
 import com.MicroServer2.MicroServer2.dto.Anime;
 import com.MicroServer2.MicroServer2.dto.AnimeOutput;
@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemProcessor;
 
-public class processor implements ItemProcessor<Anime, AnimeOutput> {
-    private static final Logger LOG = LoggerFactory.getLogger(processor.class);
+public class Processor implements ItemProcessor<Anime, AnimeOutput> {
+    private static final Logger LOG = LoggerFactory.getLogger(Processor.class);
 
     @Override
     public AnimeOutput process(Anime item) throws Exception {

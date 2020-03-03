@@ -43,8 +43,10 @@ public class RestAnimeReader implements ItemReader<Anime>{
                 Anime[].class
         );
         Anime[] ctfData = response.getBody();
+  System.out.println( "hola"+ctfData[0].getAnime_id());
         return Arrays.asList(ctfData);
     }
+
 }
 
 
